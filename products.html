@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP QUÂN ÁO</title>
+    <title>All Products</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,68 +16,46 @@
 </head>
 
 <body>
-    <div class="header">
-
-
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="account.html">Account</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
-                <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+    
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="" width="125px"></a>
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Chọn cho mình một phong cách mới <br> A new style</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, amet ullam ipsum aliquam debitis
-                        ipsa?</p>
-                    <a href="" class="btn">Mua Ngay &#8594</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1.png" alt="">
-                </div>
-            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
+            <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
         </div>
-
     </div>
 
-    <!-- Categories -->
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-            </div>
-        </div>
 
-    </div>
 
     <!-- product -->
     <div class="small-container">
-        <h2 class="title">Featured Product</h2>
+
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select name="" id="">
+                <option>Default Shorting</option>
+                <option>Short by price</option>
+                <option>Short by price</option>
+                <option>Short by rating</option>
+                <option>Short by sale</option>
+            </select>
+        </div>
+
         <div class="row">
             <div class="col-4">
-                <a href="product-details.html"><img src="images/product-1.jpg" alt=""></a>
-                <a href="product-details.html">
-                    <h4>Red Printed T-Shirt</h4>
-                </a>
+                <img src="images/product-1.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -124,7 +102,6 @@
                 <p>250 000 đ</p>
             </div>
         </div>
-        <h2 class="title">Latest Product</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="">
@@ -160,7 +137,7 @@
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-o"></i>
                 </div>
-                <p>250.000 đ</p>
+                <p>250 000 đ</p>
             </div>
             <div class="col-4">
                 <img src="images/product-8.jpg" alt="">
@@ -225,99 +202,16 @@
                 <p>250 000 đ</p>
             </div>
         </div>
-    </div>
-    <!-- offer -->
 
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/exclusive.png" class="offfer-img" alt="">
-                </div>
-                <div class="col-2">
-                    <p>Sản phẩm ưu đãi của cửa hàng </p>
-                    <h1>Smart band 4</h1>
-                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias a
-                        periam harum reiciendis natus odit ipsa expedita fuga mollitia quod ut quia, earum doloribus
-                        voluptates animi!</small>
-                    <a href="" class="btnb">Buy Now &#8594;</a>
-                </div>
-            </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
         </div>
     </div>
 
-    <!-- test -->
-
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium nihil animi nesciunt
-                        saepe aliquid odit magni rerum.</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-1.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium nihil animi nesciunt
-                        saepe aliquid odit magni rerum.</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-2.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae accusantium nihil animi nesciunt
-                        saepe aliquid odit magni rerum.</p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-3.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Brands -->
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-godrej.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-oppo.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-coca-cola.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-paypal.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- footer -->
     <div class="footer">
