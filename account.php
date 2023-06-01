@@ -59,13 +59,13 @@
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="products.php">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.php">Trang chủ</a></li>
+                    <li><a href="products.php">Sản phẩm</a></li>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Liên hệ</a></li>
                     <?php
                         if(!isset($_COOKIE['username'])){
-                            echo '<li><a href="account.php">Account</a></li>';
+                            echo '<li><a href="account.php">Tài khoản</a></li>';
                         }
                         else{
                             echo '<li><a href="">'; echo $_COOKIE['username']; echo '</a></li>';
@@ -73,6 +73,7 @@
                         }
                         
                     ?>
+                    
                 </ul>
             </nav>
             <a href="cart.php"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
@@ -90,23 +91,23 @@
                 <div class="col-2">
                     <div class="form-container">
                         <div class="form-btn">
-                            <span onclick="login()">Login</span>
-                            <span onclick="register()">Register</span>
+                            <span onclick="login()" style="width: 105px;">Đăng nhập</span>
+                            <span onclick="register()">Đăng ký</span>
                             <hr id="Indicator">
                         </div>
 
                         <form id="LoginForm" class="log" action="login_submit.php" method="POST">
                             <input name="username" type="text" placeholder="Username">
                             <input name="password" type="password" placeholder="Password">
-                            <button name="submit_dangnhap" type="submit" class="btn btn-log submit-dangnhap">Login</button>
-                            <a href="">Forgot password</a>
+                            <button name="submit_dangnhap" type="submit" class="btn btn-log submit-dangnhap">Đăng nhập</button>
+                            <a href="">Quên mật khẩu?</a>
                         </form>
 
                         <form id=RegForm class="reg" action="register_submit.php" method="POST">
                             <input name="username" type="text" placeholder="Username">
                             <input name="email" type="email" placeholder="Email">
                             <input name="password" type="password" placeholder="Password">
-                            <button name="submit-reg" type="submit" class="btn btn-reg submit-reg">Register</button>
+                            <button name="submit-reg" type="submit" class="btn btn-reg submit-reg">Đăng ký</button>
                         </form>
                     </div>
                 </div>

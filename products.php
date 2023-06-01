@@ -27,11 +27,21 @@
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="products.php">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="account.php">Account</a></li>
+                    <li><a href="index.php">Trang chủ</a></li>
+                    <li><a href="products.php">Sản phẩm</a></li>
+                    <li><a href="">Về chúng tôi</a></li>
+                    <li><a href="">Liên hệ</a></li>
+                    <?php
+                        if(!isset($_COOKIE['username'])){
+                            echo '<li><a href="account.php">Tài khoản</a></li>';
+                        }
+                        else{
+                            echo '<li><a href="">'; echo $_COOKIE['username']; echo '</a></li>';
+                            echo '<li><a href="logout.php">Đăng Xuất</a></li>';
+                        }
+                        
+                    ?>
+                    
                 </ul>
             </nav>
             <a href="cart.html"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
